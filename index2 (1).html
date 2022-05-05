@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        table {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        td {
+            padding-left: 15px;
+        }
+
+        td label {
+            font-weight: bold;
+        }
+
+        .second-form {
+            display: flex;
+            flex-direction: column;
+            padding-top: 10px;
+            width: 100%;
+        }
+
+        .insf {
+            flex-direction: row;
+            padding-bottom: 15px;
+        }
+
+        .insf input[type=text] {
+            width: 185px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .in-label {
+            font-weight: 100;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 15px;
+        }
+
+        .buttons button {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulário de inscrição</h1>
+    <fieldset style="width: 550px">
+        <legend>
+            Autores
+        </legend>
+        <table>
+            <tr>
+                <td>
+                    <form>
+                        <label for="fname">Nome:</label>
+                        <input type="texto" id="fname" name="fname">
+                    </form>
+                    <br>
+                    <form>
+                        <label for="fnumber">CPF:</label>
+                        <input type="tel" id="fnumber" name="fnumber">
+                    </form>
+                    <br>
+                    <form>
+                        <label for="fname">Autor 1:</label>
+                        <input type="texto" id="fname" name="fname">
+                    </form>
+                    <br>
+                    <form>
+                        <label for="fname">Autor 2:</label>
+                        <input type="texto" id="fname" name="fname">
+                    </form>
+                    <br>
+                    <form>
+                        <label for="fname">Autor 3:</label>
+                        <input type="texto" id="fname" name="fname">
+                    </form>
+                    <br>
+                    <form>
+                        <label for="fname">Autor 4:</label>
+                        <input type="texto" id="fname" name="fname">
+                    </form>
+                    <br>
+                    <form>
+                        <label for="fname">Autor 5:</label>
+                        <input type="texto" id="fname" name="fname">
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset style="width: 550px">
+        <legend>
+            Dados do trabalho
+        </legend>
+        <form class="second-form">
+            <div class="insf">
+                <label for="fname">Título:</label>
+                <textarea type="text" id="fname" name="fname" cols="40" rows="3"></textarea>
+            </div>
+
+            <div class="insf">
+                <label for="acon">Área do conhecimento:</label>
+                <input type="text" id="acon" name="acon">
+            </div>
+
+            <div class="insf">
+                <label for="pchave">Palavras chave:</label>
+                <input type="text" id="pchave" name="pchave">
+            </div>
+
+            <div class="insf">
+                <label>Modalidade:</label>
+                <input type="radio" id="resume" name="modal" value="resume">
+                <label class="in-label" for="modal">Resumo</label>
+                <input type="radio" id="complete" name="modal" value="complete">
+                <label class="in-label" for="modal">Completo</label>
+            </div>
+
+            <div class="insf">
+                <label>Tipo:</label>
+                <input type="radio" id="grad" name="tipo" value="grad">
+                <label class="in-label" for="modal">Graduação</label>
+                <input type="radio" id="pgrad" name="tipo" value="pgrad">
+                <label class="in-label" for="modal">Pós-graduação</label>
+                <input type="radio" id="outros" name="tipo" value="outros">
+                <label class="in-label" for="modal">Outros</label>
+            </div>
+
+            <div class="insf">
+                <label class="in-label">Apresentação</label>
+                <input type="checkbox" id="oral" name="apres" value="apres">
+                <label class="in-label" for="apres">Oral</label>
+                <input type="checkbox" id="poster" name="apres" value="poster">
+                <label class="in-label" for="apres">Pôster</label>
+            </div>
+            <div class="insf">
+                <input type="file" id="file" name="file">
+                <label class="in-label" for="file">(Tamanho máximo 2.0 Mb)</label>
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
